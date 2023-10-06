@@ -7,7 +7,17 @@ Examples:
     solution('abc', 'bc') # returns true
     solution('abc', 'd') # returns false
 """
+def solution(ch1,ch2):
+    n1=len(ch1)
+    n2=len(ch2)
+    if ch1[n1-n2:]==ch2:
+        return True
+    else:
+        return False
 
+a= solution('abc', 'bc') 
+b= solution('abc', 'd')
+print(a,b)
 """
 Create unit test using those cases:
 fixed_tests_True = (
